@@ -1,0 +1,29 @@
+<% page.posts.each(function(post, i){ %>
+    <article class="article">
+        <h2 class="article_hd">
+            <a href="/article/mockjs使用心得" class="article_tt">
+                <!---->
+                <%= post.title %>
+            </a>
+        </h2>
+        <div class="article_info">
+            <span class="hide-sm">发表于</span>
+            <span class="show-sm">
+                <i class="iconfont icon-archives"></i>
+            </span>2017-10-07 01:21 |
+            <span class="hide-sm">分类于</span>
+            <span class="show-sm">
+                <i class="iconfont icon-tag"></i>
+            </span>
+            <a href="/tags/JavaScript" class="hover-highlight">JavaScript
+            </a>
+        </div>
+        <div class="article_ct">
+            <%= post.excerpt %>
+        </div>
+        <div class="article_ft">
+            <a href="/article/mockjs使用心得" class="hover-highlight">阅读全文
+            </a>
+        </div>
+    </article>
+    <% }) %>
