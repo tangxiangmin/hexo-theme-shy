@@ -13,13 +13,11 @@
             </div>
         </div>
         <nav class="nav-responsive" data-v-04342fbc="">
-            <a href="/" class="nuxt-link-exact-active nuxt-link-active nav_item" data-v-04342fbc="">
-                <i class="iconfont icon-home" data-v-04342fbc=""></i> 首页</a>
-            <a href="/tags" class="nav_item" data-v-04342fbc="">
-                <i class="iconfont icon-tag" data-v-04342fbc=""></i> 标签</a>
-            <a href="/archive" class="nav_item" data-v-04342fbc="">
-                <i class="iconfont icon-archives" data-v-04342fbc=""></i> 归档
-            </a>
+            <% for (var i in theme.menu){ %>
+            <a class="nav_item" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            <% } %>
+
+
         </nav>
     </div>
 </header>

@@ -1,0 +1,15 @@
+.search {
+  font-size: 12px; }
+  .search_input {
+    padding: 0 10px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    width: 16em;
+    padding-right: 30px;
+    transition: all ease .3s; }
+    .search_input:focus {
+      border-color: #fff; }
+  .search_btn {
+    border: none;
+    margin-left: -30px; }

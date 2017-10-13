@@ -2,6 +2,7 @@
 /* ---particle--- */
 @import "../_mixins";
 @import "../_config";
+@import "../_extend";
 // 浮动
 .fl {
 	float: left;
@@ -82,9 +83,9 @@
 	}
 }
 
-// .hover-highlight {
-// 	@extend %hover-highlight;
-// }
+ .hover-highlight {
+ 	@extend %hover-highlight;
+ }
 /* ---particle end--- */
 
 
