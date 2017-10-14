@@ -10,8 +10,8 @@
             |
             <span class="hide-sm">分类于</span>
             <span class="show-sm"><i class="iconfont icon-tag"></i></span>
-            <% page.categories.forEach(function(item){ %>
-                <a href="/tags/JavaScript" class="hover-highlight"><%= item.name %></a>
+            <% page.categories.each(function(item, i){ %>
+                <a href="<%= url_for('/categories/' + item.name)%>" class="hover-highlight"><%= item.name %></a>
             <% }) %>
 
         </div>
@@ -20,8 +20,8 @@
         <%- page.content %>
     </div>
     <footer class="article_ft">
-        <% page.categories.forEach(function(item){ %>
-        <a href="<% %>" class="article_tag">#<%= item.name %></a>
+        <% page.tags.each(function(item, i){ %>
+        <a href="<%= url_for('tags/'+item.name) %>" class="article_tag">#<%= item.name %></a>
         <% }) %>
     </footer>
 
