@@ -36,9 +36,6 @@
 	&_nav {
 		@include clearfix;
 	}
-
-
-
 }
 
 .article-detail {
@@ -69,14 +66,6 @@
 				max-width: 100%;
 			}
 
-			table {
-				width: 100%;
-				border-collapse: collapse;
-			}
-
-			th, td {
-				@include border;
-			}
 		}
 
 		&_tag {

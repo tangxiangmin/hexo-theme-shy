@@ -15,7 +15,6 @@
                 <i class="iconfont icon-tag"></i>
             </span>
             <% post.categories.forEach(function(item){%>
-                <!--<% console.log(item) %>-->
             <a href="<% url_for(item.path)%>" class="hover-highlight"><%= item.name%></a>
             <% }) %>
         </div>
