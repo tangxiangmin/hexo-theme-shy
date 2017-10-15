@@ -60,7 +60,8 @@
 		}
 
 		th, td {
-			@include border;
+			padding: 0;
+			border: none;
 		}
 	}
 	&_tag {
@@ -79,4 +80,14 @@
 		@include text-overflow;
 	}
 
+	//.highlight.plain {
+	//	padding: 0;
+	//	margin: $basemargin 0 ;
+	//	border: 1px solid #dedede;
+	//	border-radius: 5px;
+	//	background: #1b2b34;
+	//	.gutter {
+	//		width: 3em;
+	//	}
+	//}
 }
