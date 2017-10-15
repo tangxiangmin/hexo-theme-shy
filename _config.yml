@@ -3,3 +3,7 @@ menu:
   归档: /archives
   标签: /tags
   Test: /test
+
+
+archive_generator:
+  per_page: 30

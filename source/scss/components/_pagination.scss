@@ -4,7 +4,7 @@
 	justify-content: center;
 
 	margin-top: 3rem;
-	font-size: 0;
+	//font-size: 0;
 	border-top: 1px solid #f8f8f8;
 
 	%base {
@@ -28,6 +28,12 @@
 			height: 1px;
 			border-top: 1px solid transparent;
 
+		}
+	}
+	.page-number {
+		@extend %base;
+		&.current {
+			background: #f8f8f8;
 		}
 	}
 

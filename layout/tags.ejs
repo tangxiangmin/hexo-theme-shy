@@ -4,7 +4,7 @@
     </div>
     <div class="category">
         <% site.categories.each(function(item, i){ %>
-            <a href="<%= url_for('categories/' + item.name)%>" class="category_item">
+            <a href="<%= url_for(item.path)%>" class="category_item">
                 <%= item.name + '(' + item.length + ')' %>
             </a>
         <% }) %>
@@ -31,7 +31,7 @@
                     fontSize = "text-lg";
                 }
             %>
-            <a href="<%= url_for('tags/'+item.name) %>" class="hover-highlight tag_item <%= fontSize %>">
+            <a href="<%= url_for(item.path) %>" class="hover-highlight tag_item <%= fontSize %>">
                 <%= item.name %>
             </a>
         <% }) %>

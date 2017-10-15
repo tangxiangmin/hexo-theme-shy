@@ -9,13 +9,13 @@
             <span class="hide-sm">发表于</span>
             <span class="show-sm">
                 <i class="iconfont icon-archives"></i>
-            </span>2017-10-07 01:21 |
+            </span><%= date(post.date, 'YYYY-MM-DD H:mm:ss')%> |
             <span class="hide-sm">分类于</span>
             <span class="show-sm">
                 <i class="iconfont icon-tag"></i>
             </span>
             <% post.categories.forEach(function(item){%>
-            <a href="<% url_for(item.path)%>" class="hover-highlight"><%= item.name%></a>
+            <a href="<%= url_for(item.path)%>" class="hover-highlight"><%= item.name%></a>
             <% }) %>
         </div>
         <div class="article_ct">
@@ -27,4 +27,6 @@
             </a>
         </div>
     </article>
-    <% }) %>
+<% }) %>
+
+<%- partial('_partial/pagination')%>
